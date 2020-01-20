@@ -30,7 +30,8 @@ header .list {
 }
 
 .landing div h3 {
-  padding-top: 350px;
+  position: relative;
+  top: 500px;
   margin-block-start: 0px;
   margin-block-end: 0px;
   font-size: 36px;
@@ -38,7 +39,8 @@ header .list {
 
 .landing div h4 {
   font-size: 24px;
-  margin-top: 4px;
+  position: relative;
+  top: 480px;
 }
 
 .landing div button {
@@ -49,27 +51,32 @@ header .list {
   border-radius: 100px;
   font-size: 20px;
   color: white;
-  margin-top: 100px;
+  position: relative;
+  top: 560px;
 }
 
 .landing div {
   z-index: 2;
-  margin-left: -300px;
+  margin-left: -150px;
 }
 
 .landing {
   width: 100%;
-  height: 800px;
-  background: #454443;
-  color: white;
+  height: 100%;
+  background: url("../images/work.jpg");
   display: flex;
   justify-content: center;
+  color: dimgray;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .landing img {
-  height: 650px;
-  margin-top: -10px;
-  margin-left: -180px;
+  height: 800px;
+  margin-top: 10px;
+  margin-left: -250px;
 }
 
 .info {
@@ -89,17 +96,24 @@ header .list {
 }
 
 .container {
-  background: #454443;
-  color: white;
+  background: url("../images/work1.jpg");
+  color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
 }
 
 .container h2 {
   text-align: center;
   font-size: 24px;
-  padding-top: 10px;
+  padding-top: 40px;
+  color: white;
 }
 
 .container h1 {
+  position: relative;
+  top: 100px;
   font-size: 24px;
 }
 
@@ -108,12 +122,17 @@ header .list {
 }
 
 .gamification-block div {
-  width: 400px;
+  width: 370px;
   margin-top: 100px;
 }
 
 .gamification-block img {
-  width: 450px;
+  width: 550px;
+}
+
+.gamification-block p {
+  position: relative;
+  top: 100px;
 }
 
 footer {
@@ -171,7 +190,8 @@ footer ul li:nth-child(2n) {
   }
 
   .landing {
-    height: 600px;
+    min-height: 600px;
+    background-attachment: scroll;
   }
 }
 
